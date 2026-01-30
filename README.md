@@ -1,0 +1,2 @@
+# Hytale-wiki
+Wiki
