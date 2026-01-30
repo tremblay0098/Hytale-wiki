@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Magie & sorts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Magie dans Hytale : accès aux sorts, styles de magie, builds mage et hybrides." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3, h4 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    ul, ol { padding-left: 1.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Magie & sorts</h1>
+    <p class="section-intro">
+      Aperçu du système de magie : comment obtenir des sorts, quels styles de jeu existent et quelques idées de builds.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="multi_serveurs.html">Multijoueur</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="acces">
+      <h2>Accès à la magie</h2>
+      <p class="section-intro">
+        La magie est moins fréquente que les armes physiques, mais elle ouvre des styles de jeu plus techniques.
+      </p>
+
+      <ul>
+        <li>Bâtons et livres de sorts se trouvent en général sur des ennemis magiques ou dans des coffres avancés.</li>
+        <li>Certains sorts consomment des charges, d’autres une ressource liée à l’arme ou à l’essence.</li>
+        <li>Les zones et donjons plus dangereux ont plus de chances de contenir du loot magique intéressant.</li>
+      </ul>
+    </section>
+
+    <section id="styles">
+      <h2>Styles de magie</h2>
+      <p class="section-intro">
+        Tu peux utiliser la magie en soutien de ton arme principale ou construire un vrai mage spécialisé.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Style</th>
+            <th>Rôle</th>
+            <th>Forces</th>
+            <th>Faiblesses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Offensive</td>
+            <td>Dégâts directs et de zone.</td>
+            <td>Très fort contre les groupes, permet de garder ses distances.</td>
+            <td>Consommation de ressources, demande un bon placement.</td>
+          </tr>
+          <tr>
+            <td>Défensive</td>
+            <td>Boucliers, barrières, réduction de dégâts.</td>
+            <td>Permet de tanker des situations où ton gear seul ne suffirait pas.</td>
+            <td>Moins de dégâts purs, dépendance aux cooldowns.</td>
+          </tr>
+          <tr>
+            <td>Utilitaire</td>
+            <td>Buffs, debuffs, contrôle des mouvements ennemis.</td>
+            <td>Synergies énormes en coop, contrôle total du tempo.</td>
+            <td>Moins spectaculaire en solo, demande de connaître les mobs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="builds">
+      <h2>Idées de builds</h2>
+
+      <h3>Mage pur</h3>
+      <ul>
+        <li>Deux slots de bâtons/livres, avec un sort offensif et un sort utilitaire/défensif.</li>
+        <li>Armure légère/moyenne pour rester mobile.</li>
+        <li>Jeu à distance, en évitant de rester statique.</li>
+      </ul>
+
+      <h3>Guerrier‑mage (hybride)</h3>
+      <ul>
+        <li>Slot 1 : arme de mêlée polyvalente (épée, marteau léger).</li>
+        <li>Slot 2 : bâton avec un sort de zone ou de contrôle (ralentissement, stun léger, etc.).</li>
+        <li>Tu ouvres avec un sort, puis tu finis les ennemis au corps‑à‑corps.</li>
+      </ul>
+
+      <h3>Archer‑mage</h3>
+      <ul>
+        <li>Slot 1 : arc/arbalète pour kite à distance.</li>
+        <li>Slot 2 : sort utilitaire (mur, ralentissement, piège élémentaire).</li>
+        <li>Idéal si tu aimes jouer sur la distance et contrôler le terrain.</li>
+      </ul>
+
+      <div class="card tips">
+        <h3>Conseils pour jouer mage</h3>
+        <ul>
+          <li>Garde toujours un œil sur tes ressources (mana/charges/essences) avant un combat difficile.</li>
+          <li>Ne néglige pas la nourriture et les potions pour compenser ta fragilité.</li>
+          <li>En coop, coordonne tes sorts avec les armes de tes alliés (contrôle + gros dégâts physiques).</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Magie & sorts. Tu peux ajouter plus tard des tableaux de sorts précis si besoin.
+    </p>
+  </footer>
+</body>
+</html>

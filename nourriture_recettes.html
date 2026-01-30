@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Nourriture & recettes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nourriture dans Hytale : rôles des plats, stations de cuisine et recettes importantes à connaître." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3, h4 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    ul, ol { padding-left: 1.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nourriture & recettes</h1>
+    <p class="section-intro">
+      Rôles de la nourriture, stations de cuisine et recettes importantes pour l’exploration et les donjons.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="multi_serveurs.html">Multijoueur</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="roles">
+      <h2>À quoi sert la nourriture ?</h2>
+      <p class="section-intro">
+        Manger ne sert pas qu’à ne pas mourir de faim : certains plats aident à tenir plus longtemps, d’autres améliorent légèrement tes capacités.
+      </p>
+
+      <ul>
+        <li>Restauration de vie sur la durée (régénération lente, plus ou moins forte).</li>
+        <li>Stabilité de la faim pour enchaîner les combats sans micro‑gestion permanente.</li>
+        <li>Buffs ponctuels selon les recettes (résistance, endurance, regen, etc. si ton serveur les utilise).</li>
+      </ul>
+    </section>
+
+    <section id="stations">
+      <h2>Stations de cuisine</h2>
+      <p class="section-intro">
+        Certaines recettes demandent une station spécifique, d’autres se contentent d’un simple feu de camp.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Station</th>
+            <th>Rôle</th>
+            <th>Exemples de recettes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feu de camp / grill</td>
+            <td>Cuire la viande crue et quelques plats simples.</td>
+            <td>Viande grillée, poisson cuit, légumes rôtis basiques.</td>
+          </tr>
+          <tr>
+            <td>Cooking Pot (marmite)</td>
+            <td>Préparer des soupes et ragoûts qui combinent plusieurs ingrédients.</td>
+            <td>Soupe de légumes, ragoût viande + légumes.</td>
+          </tr>
+          <tr>
+            <td>Chef’s Stove</td>
+            <td>Station avancée pour plats complexes et potentiels buffs.</td>
+            <td>Pains spéciaux, plats énergisants, recettes haut niveau.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="types_plats">
+      <h2>Types de plats</h2>
+      <ul>
+        <li><strong>Basique :</strong> viande grillée, pain, légumes simples. Faciles à produire en masse.</li>
+        <li><strong>Combiné :</strong> ragoûts, soupes, plats complets avec viande + légumes.</li>
+        <li><strong>Buff :</strong> recettes plus rares/complexes, utiles avant un boss ou un donjon.</li>
+      </ul>
+    </section>
+
+    <section id="recettes">
+      <h2>Recettes importantes (exemples)</h2>
+      <p class="section-intro">
+        Ce tableau liste des familles de recettes : adapte les ingrédients précis selon l’équilibrage de ton serveur.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Recette</th>
+            <th>Ingrédients typiques</th>
+            <th>Station</th>
+            <th>Utilité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pain rustique</td>
+            <td>Blé transformé en pâte (farine + eau selon tes règles).</td>
+            <td>Four ou Chef’s Stove.</td>
+            <td>Nourriture fiable, facile à stacker pour l’exploration.</td>
+          </tr>
+          <tr>
+            <td>Viande grillée</td>
+            <td>Viande crue de poulet, porc, bœuf, gibier.</td>
+            <td>Feu de camp ou grill.</td>
+            <td>Consomme l’excès de viande de ton élevage, bon ratio simplicité/soin.</td>
+          </tr>
+          <tr>
+            <td>Soupe de légumes</td>
+            <td>Carotte + laitue/verts + éventuellement maïs ou autres légumes.</td>
+            <td>Cooking Pot.</td>
+            <td>Très bon rendement en early game, idéal pour la survie quotidienne.</td>
+          </tr>
+          <tr>
+            <td>Ragoût viande + légumes</td>
+            <td>Viande cuite + 2–3 légumes variés.</td>
+            <td>Cooking Pot ou Chef’s Stove.</td>
+            <td>Repas confortable pour les expéditions un peu longues.</td>
+          </tr>
+          <tr>
+            <td>Plat énergisant</td>
+            <td>Viande de qualité + légumes + ingrédient spécial (baies, herbes).</td>
+            <td>Chef’s Stove.</td>
+            <td>Buffs ou meilleure régénération, parfait avant un donjon/boss.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Préparer une sortie dangereuse</h3>
+        <ul>
+          <li>Avoir toujours un stack de nourriture basique (pain/viande) pour les petits soins.</li>
+          <li>Préparer quelques plats combinés pour les combats longs.</li>
+          <li>Garder les plats à buffs pour les moments critiques (boss, grosses salles de mobs).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="liens">
+      <h2>Liens utiles</h2>
+      <ul>
+        <li><a href="farming_ressources.html">Voir Farming & ressources pour les ingrédients (cultures, animaux).</a></li>
+        <li><a href="systemes_avances.html">Voir Systèmes avancés pour les potions et l’alchimie.</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Nourriture & recettes. Ajuste les recettes exactes selon ton serveur.
+    </p>
+  </footer>
+</body>
+</html>

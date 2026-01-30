@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale Wiki – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Accueil du mini-wiki Hytale : guides, zones, farming, nourriture, objets, magie et systèmes avancés." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .tagline {
+      font-size: 0.95rem;
+      color: #9ca3af;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      border: 1px solid #1f2937;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { font-size: 0.9rem; color: #d1d5db; }
+    .card a.btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      background: #1d4ed8;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+    }
+    .card a.btn:hover { background: #2563eb; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mini‑wiki Hytale</h1>
+    <p class="tagline">
+      Un wiki simplifié pour ton serveur : guides de progression, zones, farming, nourriture, objets importants, magie et systèmes avancés.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Par où commencer ?</h2>
+      <p>
+        Utilise cette page comme hub : choisis une carte ci‑dessous selon ce que tu veux faire dans Hytale (démarrer une partie, farmer, cuisiner, construire, etc.).
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Bien débuter</h3>
+          <p>Route des premières heures, quoi faire jour 1–2, erreurs à éviter, quand changer de zone.</p>
+          <a class="btn" href="guide_debut.html">Voir le guide</a>
+        </article>
+
+        <article class="card">
+          <h3>Monde, zones & biomes</h3>
+          <p>Zones d’Orbis, biomes, difficulté par région, où installer ta première base.</p>
+          <a class="btn" href="zones_biomes.html">Explorer le monde</a>
+        </article>
+
+        <article class="card">
+          <h3>Farming & ressources</h3>
+          <p>Minerais par zone, cultures à planter, animaux à élever, essences et consommables.</p>
+          <a class="btn" href="farming_ressources.html">Farmer mieux</a>
+        </article>
+
+        <article class="card">
+          <h3>Nourriture & recettes</h3>
+          <p>Types de plats, stations de cuisine, recettes importantes pour l’exploration et les donjons.</p>
+          <a class="btn" href="nourriture_recettes.html">Passer en cuisine</a>
+        </article>
+
+        <article class="card">
+          <h3>Objets importants</h3>
+          <p>Objets qui débloquent la progression : minerais par tier, établis, outils, consommables clés.</p>
+          <a class="btn" href="objets_importants.html">Voir les objets clés</a>
+        </article>
+
+        <article class="card">
+          <h3>Magie & systèmes avancés</h3>
+          <p>Styles de magie, builds mage/hybride, essences, potions et mécaniques avancées.</p>
+          <a class="btn" href="magie_sorts.html">Découvrir la magie</a>
+        </article>
+
+        <article class="card">
+          <h3>Mobs, boss & dangers</h3>
+          <p>Mobs par zone, comportements, mini‑boss et gros dangers à connaître avant de partir.</p>
+          <a class="btn" href="mobs_boss.html">Préparer les combats</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale non officiel – adapte librement le contenu à ton serveur ou à ta communauté.
+    </p>
+  </footer>
+</body>
+</html>

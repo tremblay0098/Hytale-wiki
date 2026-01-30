@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Zones & biomes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zones d’Orbis et biomes dans Hytale : difficulté, biomes de surface et souterrains, conseils pour s’installer." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zones & biomes d’Orbis</h1>
+    <p class="section-intro">
+      Aperçu des zones d’Orbis, de leurs biomes principaux, de la difficulté et des raisons d’y aller.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="multi_serveurs.html">Multijoueur</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="zones">
+      <h2>Vue d’ensemble des zones</h2>
+      <p class="section-intro">
+        Chaque zone a une ambiance, un niveau de danger et des ressources qui lui sont propres.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Ambiance & biomes</th>
+            <th>Difficulté</th>
+            <th>Pourquoi y aller</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zone 1 – Emerald Grove</td>
+            <td>Plaines, forêts, lacs, collines, marais, grottes au‑dessus du magma.</td>
+            <td>Faible à moyenne.</td>
+            <td>Zone de départ idéale, ressources variées, base principale recommandée.</td>
+          </tr>
+          <tr>
+            <td>Zone 2 – Howling Sands</td>
+            <td>Déserts, mesas, savanes, oasis, temples de sable.</td>
+            <td>Moyenne à élevée.</td>
+            <td>Thorium en quantité, ruines, loots plus rares et combats plus durs.</td>
+          </tr>
+          <tr>
+            <td>Zone 3 – Whisperfrost / Borea</td>
+            <td>Montagnes enneigées, taïgas, plaines gelées, rivières et grottes de glace.</td>
+            <td>Moyenne à élevée.</td>
+            <td>Or, argent, cobalt, ambiance nordique et ennemis plus dangereux.</td>
+          </tr>
+          <tr>
+            <td>Zone 4 – Devastated Lands</td>
+            <td>Terres brûlées, volcans, plaines de feu, jungles dévastées.</td>
+            <td>Très élevée.</td>
+            <td>Adamantite, essences sombres, défis de fin de jeu.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="biomes">
+      <h2>Biomes par zone</h2>
+      <p class="section-intro">
+        Voici les principaux biomes de surface et souterrains qui composent chaque zone.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Biomes de surface</th>
+            <th>Biomes souterrains</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Emerald Grove</td>
+            <td>Plaines émeraude, forêts (classiques, automnales, azur), marais, falaises de marbre.</td>
+            <td>Cavernes de pierre, cavernes cristallines, grottes de lave, mini‑biomes spéciaux.</td>
+          </tr>
+          <tr>
+            <td>Howling Sands</td>
+            <td>Désert, dunes, mesas, savanes, oasis et ruines de temples.</td>
+            <td>Grottes sableuses, cavernes rocheuses, galeries sous les oasis avec poches d’eau.</td>
+          </tr>
+          <tr>
+            <td>Whisperfrost / Borea</td>
+            <td>Forêts de pins, plaines enneigées, montagnes, toundra.</td>
+            <td>Grottes de glace et de neige, caves rocheuses avec poches de vie fragile.</td>
+          </tr>
+          <tr>
+            <td>Devastated Lands</td>
+            <td>Volcans, plaines de cendres, jungle brûlée, falaises déchirées.</td>
+            <td>Caves volcaniques, lacs de lave, jungles souterraines surpeuplées de prédateurs.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Conseils rapides</h3>
+        <ul>
+          <li>Emerald Grove : parfait pour ta base principale, au croisement forêt + eau + entrée de grotte.</li>
+          <li>Howling Sands : crée plutôt des avant‑postes près des oasis pour le thorium et les ruines.</li>
+          <li>Whisperfrost/Borea : évite les sommets exposés, préfère les vallées et forêts pour t’installer.</li>
+          <li>Devastated Lands : pense « camps temporaires » plutôt que vraie base, et viens équipé.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="liens">
+      <h2>Liens utiles</h2>
+      <ul>
+        <li><a href="farming_ressources.html">Voir Farming & ressources pour les minerais/cultures par zone.</a></li>
+        <li><a href="mobs_boss.html">Voir Mobs & boss pour les ennemis typiques de chaque zone.</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Zones & biomes. Tu peux ajouter des biomes custom si ton serveur en utilise.
+    </p>
+  </footer>
+</body>
+</html>

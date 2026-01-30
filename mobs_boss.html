@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Mobs & boss</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mobs et boss dans Hytale : types d’ennemis par zone, dangerosité et conseils de combat." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    .warning { border-left: 4px solid #f97316; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mobs & boss</h1>
+    <p class="section-intro">
+      Vue d’ensemble des types de mobs par zone, avec leur dangerosité générale et quelques conseils pour s’y préparer.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="mobs_zones">
+      <h2>Mobs par zone (vue rapide)</h2>
+      <p class="section-intro">
+        Ce tableau ne liste pas tous les monstres, mais les familles d’ennemis typiques et leur niveau de danger.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Types de mobs</th>
+            <th>Niveau de danger</th>
+            <th>Conseils</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Emerald Grove</td>
+            <td>Faune passive, petits prédateurs, quelques humanoïdes hostiles.</td>
+            <td>Bas à moyen.</td>
+            <td>Parfait pour apprendre les patterns, tester tes premières armes et armures.</td>
+          </tr>
+          <tr>
+            <td>Howling Sands</td>
+            <td>Hyènes, grands prédateurs, gardiens de temples, bandits.</td>
+            <td>Moyen à élevé.</td>
+            <td>Évite de te retrouver entouré, garde toujours un chemin de fuite.</td>
+          </tr>
+          <tr>
+            <td>Whisperfrost / Borea</td>
+            <td>Bêtes du froid, humanoïdes plus agressifs, casters.</td>
+            <td>Moyen à élevé.</td>
+            <td>Prévois de quoi encaisser les dégâts à distance, ne traîne pas à découvert.</td>
+          </tr>
+          <tr>
+            <td>Devastated Lands</td>
+            <td>Créatures corrompues, gros prédateurs, élites et mini‑boss fréquents.</td>
+            <td>Très élevé.</td>
+            <td>Y aller équipé et préparé, si possible en groupe, avec potions et bonne nourriture.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="types_mobs">
+      <h2>Types de mobs (général)</h2>
+      <p class="section-intro">
+        Quelques grandes familles de mobs que tu rencontreras un peu partout.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Comportement</th>
+            <th>Comment les gérer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mobs de mêlée</td>
+            <td>Te foncent dessus, dégâts au contact.</td>
+            <td>Garder la distance, profiter de la hauteur, utiliser des attaques de zone.</td>
+          </tr>
+          <tr>
+            <td>Mobs à distance</td>
+            <td>Projectiles, magie, attaques de loin.</td>
+            <td>Utiliser le décor comme couverture, les pousser au corps‑à‑corps.</td>
+          </tr>
+          <tr>
+            <td>Élites</td>
+            <td>Plus résistants, plus de dégâts, parfois capacités spéciales.</td>
+            <td>Isoler la cible, éviter de les combattre avec plein de trash mobs autour.</td>
+          </tr>
+          <tr>
+            <td>Mobs rapides</td>
+            <td>Dash, sauts, poursuite agressive.</td>
+            <td>Prévoir de l’espace pour esquiver, utiliser ralentissements/contrôles si tu en as.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="mini_boss">
+      <h2>Mini‑boss & élites</h2>
+      <p class="section-intro">
+        Certains ennemis ne sont pas de vrais boss, mais sont nettement plus dangereux que les mobs normaux.
+      </p>
+
+      <ul>
+        <li>Ils ont souvent plus de points de vie, des attaques spéciales ou des renforts.</li>
+        <li>Leur loot est meilleur (armes/armures, essences, objets rares).</li>
+        <li>Ils valent la peine d’être affrontés, mais avec un minimum de préparation.</li>
+      </ul>
+
+      <div class="card warning">
+        <h3>Comment les aborder</h3>
+        <ul>
+          <li>Vider la zone des petits mobs avant d’engager le mini‑boss.</li>
+          <li>Repérer au moins une zone de repli (couloir, hauteur, portail de sortie).</li>
+          <li>Venir avec de la nourriture correcte et, si possible, quelques potions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="boss">
+      <h2>Boss & combats majeurs</h2>
+      <p class="section-intro">
+        Sans spoiler tous les détails, voici comment présenter les boss pour ton wiki ou ton serveur.
+      </p>
+
+      <ul>
+        <li>Chaque boss est généralement lié à une zone, un donjon ou une faction.</li>
+        <li>Ils ont des patterns d’attaque reconnaissables : phases, télégraphies, invocations de mobs, etc.</li>
+        <li>Ils servent souvent de jalons de progression (avant d’aller en zone 3, battre tel boss, etc.).</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Boss</th>
+            <th>Zone / lieu</th>
+            <th>Préparation conseillée</th>
+            <th>Conseil de présentation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Boss de zone 1 (exemple)</td>
+            <td>Donjon majeur d’Emerald Grove.</td>
+            <td>Stuff cuivre/fer, bonne nourriture, 1–2 potions.</td>
+            <td>Dans ton wiki, décris le thème et les prérequis sans détailler tous les patterns.</td>
+          </tr>
+          <tr>
+            <td>Boss de zone 2 (exemple)</td>
+            <td>Temple/ruine dans Howling Sands.</td>
+            <td>Stuff thorium, expérience de jeu intermédiaire.</td>
+            <td>Tu peux ajouter une section « Astuces » avec 2–3 conseils sans spoil massif.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Pour ton serveur ou wiki</h3>
+        <ul>
+          <li>Tu peux faire une sous‑page par boss si tu veux entrer dans les détails.</li>
+          <li>Sur cette page, garde plutôt les infos générales et les prérequis de progression.</li>
+          <li>Ajoute des liens vers <a href="zones_biomes.html">Zones & biomes</a> pour situer chaque boss.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Mobs & boss. Tu peux détailler chaque boss dans une sous‑page si tu veux aller plus loin.
+    </p>
+  </footer>
+</body>
+</html>

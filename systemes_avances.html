@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Systèmes avancés</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Systèmes avancés de Hytale : essences, potions, alchimie et mécaniques plus poussées." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    ul, ol { padding-left: 1.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Systèmes avancés</h1>
+    <p class="section-intro">
+      Essences, potions, alchimie et autres mécaniques plus poussées qui complètent la progression.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="essences">
+      <h2>Essences</h2>
+      <p class="section-intro">
+        Les essences relient le farming, les mobs avancés et le crafting magique.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Essence</th>
+            <th>Provenance typique</th>
+            <th>Utilisation générale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essence of Life</td>
+            <td>Farming (cultures, animaux), certains loots de mobs.</td>
+            <td>Outils de farm avancés, objets liés à la vie/nature, quelques recettes magiques.</td>
+          </tr>
+          <tr>
+            <td>Essence « sombre » / Void</td>
+            <td>Mobs corrompus, zones dangereuses, donjons tardifs.</td>
+            <td>Gear sombre/pouvoirs, magie plus agressive ou risquée.</td>
+          </tr>
+          <tr>
+            <td>Autres essences spécialisées</td>
+            <td>Biomes ou donjons particuliers.</td>
+            <td>Recettes uniques selon ton serveur (enchantements, objets spéciaux).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="alchimie">
+      <h2>Alchimie & potions</h2>
+      <p class="section-intro">
+        L’alchimie te permet de transformer des plantes rares et des essences en potions utiles.
+      </p>
+
+      <ul>
+        <li>Les plantes spéciales (baies, herbes, champignons) sont souvent la base des potions.</li>
+        <li>Les essences renforcent ou modifient l’effet (durée, puissance, type de buff).</li>
+        <li>Une station d’alchimie dédiée est nécessaire pour les recettes avancées.</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type de potion</th>
+            <th>Ingrédients typiques</th>
+            <th>Usage conseillé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Soin</td>
+            <td>Plantes médicinales + Essence of Life.</td>
+            <td>Compléter la nourriture lors des combats difficiles.</td>
+          </tr>
+          <tr>
+            <td>Endurance / énergie</td>
+            <td>Plantes « toniques » + essences neutres ou de mouvement.</td>
+            <td>Pour les builds qui consomment beaucoup d’endurance.</td>
+          </tr>
+          <tr>
+            <td>Résistance</td>
+            <td>Plantes robustes + essences liées au type de dégâts.</td>
+            <td>Avant un boss ou une zone très ciblée (feu, glace, etc.).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="mech">
+      <h2>Autres mécaniques avancées</h2>
+      <p class="section-intro">
+        Tu peux utiliser cette section pour noter les détails plus pointus de ton serveur ou de ta version du jeu.
+      </p>
+
+      <ul>
+        <li>Stats et résistances spéciales présentes sur certaines pièces d’équipement.</li>
+        <li>Interactions particulières entre certains sorts, potions et types d’ennemis.</li>
+        <li>Règles maison de ton serveur (enchantements custom, limitations, objets uniques).</li>
+      </ul>
+
+      <div class="card tips">
+        <h3>Conseils pour ton wiki</h3>
+        <ul>
+          <li>Garde cette page pour les joueurs qui connaissent déjà les bases.</li>
+          <li>Ajoute des exemples concrets plutôt que des listes trop théoriques.</li>
+          <li>Fais des liens depuis les pages Magie, Farming et Objets dès qu’une mécanique devient avancée.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Systèmes avancés. Parfait pour documenter tes règles custom et les mécaniques fines.
+    </p>
+  </footer>
+</body>
+</html>

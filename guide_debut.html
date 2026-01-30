@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Bien débuter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guide Hytale pour bien débuter : premières heures, route de progression, erreurs à éviter." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3, h4 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    .warning { border-left: 4px solid #f97316; }
+    ul, ol { padding-left: 1.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bien débuter sur Hytale</h1>
+    <p class="section-intro">
+      Cette page résume quoi faire pendant tes premières heures de jeu, comment progresser et quelles erreurs éviter.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="multi_serveurs.html">Multijoueur</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>Objectif des deux premiers jours</h2>
+      <p class="section-intro">
+        L’idée est d’obtenir très vite un abri sûr, des outils corrects, une source de nourriture, puis de te préparer à explorer la première grande grotte.
+      </p>
+
+      <div class="card">
+        <h3>Route express jour 1</h3>
+        <ol>
+          <li>Ramasser bois, pierre et un peu de nourriture (baies, viande facile).</li>
+          <li>Crafter des outils de base (pioche, hache, arme simple).</li>
+          <li>Installer un abri fermé avec un lit et quelques coffres.</li>
+          <li>Repérer une entrée de grotte proche de la base.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Route express jour 2</h3>
+        <ol>
+          <li>Explorer la grotte proche pour charbon + fer/cuivre.</li>
+          <li>Améliorer ton équipement (arme + armure de métal de base).</li>
+          <li>Placer les premiers champs (blé/maïs) près de ta base.</li>
+          <li>Récupérer 2–3 animaux faciles pour lancer l’élevage.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="progression">
+      <h2>Progression : du stone à l’adamantite</h2>
+      <p class="section-intro">
+        Utilise ce tableau comme repère pour savoir où aller et quel matériel viser.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Palier</th>
+            <th>Zone conseillée</th>
+            <th>Objectifs principaux</th>
+            <th>Quand passer au palier suivant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Début (bois/stone)</td>
+            <td>Emerald Grove, autour du spawn.</td>
+            <td>Abri, outils de base, arme simple, nourriture.</td>
+            <td>Quand tu as un abri, un stack de nourriture et un peu de charbon/métal.</td>
+          </tr>
+          <tr>
+            <td>Cuivre / fer</td>
+            <td>Emerald Grove, grottes plus profondes.</td>
+            <td>Set d’outils métal, armure correcte, petite ferme et enclos.</td>
+            <td>Quand tu te sens à l’aise contre les mobs de la zone 1.</td>
+          </tr>
+          <tr>
+            <td>Thorium</td>
+            <td>Howling Sands (zone 2).</td>
+            <td>Farm de thorium, découvertes de nouvelles structures et temples.</td>
+            <td>Quand les mobs de zone 2 ne te mettent plus en PLS en 2 coups.</td>
+          </tr>
+          <tr>
+            <td>Or / argent / cobalt</td>
+            <td>Whisperfrost / Borea (zone 3).</td>
+            <td>Gear avancé, préparation aux grosses menaces.</td>
+            <td>Quand tu peux explorer sans mourir dès que tu sors de ta base.</td>
+          </tr>
+          <tr>
+            <td>Adamantite</td>
+            <td>Devastated Lands (zone 4).</td>
+            <td>Matériaux de fin de jeu, raids risqués, boss et défis ultimes.</td>
+            <td>Quand tu veux optimiser ton perso et relever les défis les plus durs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="erreurs">
+      <h2>Erreurs fréquentes à éviter</h2>
+
+      <div class="card warning">
+        <h3>À éviter absolument</h3>
+        <ul>
+          <li>Explorer loin sans marquer visuellement ta base ou un chemin de retour.</li>
+          <li>Plonger dans une grotte profonde sans torches ni blocs pour remonter.</li>
+          <li>Ignorer la nourriture : toujours garder quelques plats prêts sur toi.</li>
+          <li>Aller en zone 2/3 avec un stuff de tout début de partie.</li>
+        </ul>
+      </div>
+
+      <div class="card tips">
+        <h3>Bons réflexes à prendre</h3>
+        <ul>
+          <li>Toujours avoir un lit et un coffret de secours dans ta base.</li>
+          <li>Noter les entrées de grottes intéressantes avec des blocs/torches.</li>
+          <li>Démarrer un champ de blé/maïs dès que possible.</li>
+          <li>Capturer quelques poulets/moutons dès que tu en croises près de ta base.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="liens">
+      <h2>Et ensuite ?</h2>
+      <ul>
+        <li><a href="zones_biomes.html">Voir les zones & biomes pour choisir où t’installer.</a></li>
+        <li><a href="farming_ressources.html">Voir le farming pour les minerais, cultures et animaux.</a></li>
+        <li><a href="nourriture_recettes.html">Voir la nourriture pour optimiser tes repas.</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page « Bien débuter ». Adapte le contenu en fonction de ton serveur.
+    </p>
+  </footer>
+</body>
+</html>

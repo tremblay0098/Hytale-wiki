@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hytale – Farming & ressources</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farming Hytale : minerais, cultures, animaux, élevage, essences et consommables utiles." />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #0b1016;
+      color: #f0f4ff;
+    }
+    header, nav, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    header { text-align: center; }
+    h1, h2, h3, h4 {
+      color: #8ee0ff;
+      margin-top: 1.8rem;
+    }
+    a { color: #55c5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+    nav li { margin: 0; padding: 0; }
+    nav a { font-weight: 600; }
+    .section-intro {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #111827;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      border: 1px solid #1f2937;
+    }
+    .tips { border-left: 4px solid #22c55e; }
+    .warning { border-left: 4px solid #f97316; }
+    ul, ol { padding-left: 1.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #1f2937;
+      padding: 0.6rem 0.5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #020617; }
+    tbody tr:nth-child(even) { background: #020617; }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Farming & ressources</h1>
+    <p class="section-intro">
+      Vue d’ensemble du farming dans Hytale : minerais, cultures, animaux, élevage et essences liées à la progression.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="guide_debut.html">Bien débuter</a></li>
+      <li><a href="zones_biomes.html">Zones & biomes</a></li>
+      <li><a href="farming_ressources.html">Farming</a></li>
+      <li><a href="nourriture_recettes.html">Nourriture</a></li>
+      <li><a href="objets_importants.html">Objets</a></li>
+      <li><a href="magie_sorts.html">Magie</a></li>
+      <li><a href="mobs_boss.html">Mobs & boss</a></li>
+      <li><a href="multi_serveurs.html">Multijoueur</a></li>
+      <li><a href="systemes_avances.html">Systèmes avancés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- INTRO -->
+    <section id="intro">
+      <h2>Vue générale</h2>
+      <p class="section-intro">
+        Le farming regroupe le minage (minerais), l’agriculture (cultures), l’élevage (animaux) et quelques essences/consommables avancés.
+      </p>
+      <p>
+        Cette page te sert de mémo : quels minerais viser, quelles cultures planter, quels animaux élever et quelles ressources garder précieusement pour la suite.
+      </p>
+    </section>
+
+    <!-- MINERAIS -->
+    <section id="minerais">
+      <h2>Minerais : où les trouver et pourquoi</h2>
+      <p class="section-intro">
+        Utilise ce tableau comme mémo des minerais principaux, où les chercher et pourquoi ils sont importants.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Minerai</th>
+            <th>Zone / couche typique</th>
+            <th>Utilité principale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pierre</td>
+            <td>Partout, couches supérieures.</td>
+            <td>Blocs de construction, outils/armes les plus basiques.</td>
+          </tr>
+          <tr>
+            <td>Cuivre</td>
+            <td>Emerald Grove, grottes peu profondes.</td>
+            <td>Premiers outils et armes métal, gros boost de confort en early game.</td>
+          </tr>
+          <tr>
+            <td>Fer</td>
+            <td>Emerald Grove, grottes moyennes/profondes.</td>
+            <td>Set d’outils et d’armure fiable, prérequis pour attaquer la zone 2.</td>
+          </tr>
+          <tr>
+            <td>Thorium</td>
+            <td>Howling Sands, couches moyennes/profondes.</td>
+            <td>Équipement mid‑game, préparation aux zones plus dangereuses.</td>
+          </tr>
+          <tr>
+            <td>Or / argent</td>
+            <td>Whisperfrost/Borea, biomes avancés.</td>
+            <td>Crafts avancés, armes et armures plus spécialisées.</td>
+          </tr>
+          <tr>
+            <td>Cobalt</td>
+            <td>Whisperfrost/Borea, couches profondes.</td>
+            <td>Gear haut niveau, très bon pour les zones difficiles.</td>
+          </tr>
+          <tr>
+            <td>Adamantite</td>
+            <td>Devastated Lands, couches profondes / zones très dangereuses.</td>
+            <td>Matériau de fin de jeu pour l’équipement ultime.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Conseils de minage</h3>
+        <ul>
+          <li>Installe un accès sécurisé à ta grotte principale (escaliers, échelles, torches, portes).</li>
+          <li>Garde un coffre dédié aux minerais et barres près de ta forge/anvil.</li>
+          <li>Ne pars jamais miner sans nourriture, torches et blocs pour reboucher/creuser.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CULTURES -->
+    <section id="cultures">
+      <h2>Cultures : ce qu’il faut planter</h2>
+      <p class="section-intro">
+        Les cultures alimentent ta cuisine, ton élevage et certains crafts de farming, en plus de fournir de l’Essence of Life.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Culture</th>
+            <th>Rôle</th>
+            <th>Utilisation principale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Blé / maïs</td>
+            <td>Base de l’alimentation.</td>
+            <td>Pain, plats simples, nourriture pour certains animaux.</td>
+          </tr>
+          <tr>
+            <td>Carottes / pommes de terre</td>
+            <td>Légumes polyvalents.</td>
+            <td>Soupe de légumes, ragoûts, accompagnements.</td>
+          </tr>
+          <tr>
+            <td>Légumes verts (salades, etc.)</td>
+            <td>Complément alimentaire.</td>
+            <td>Soupe, plats combinés, éventuellement potions/herboristerie.</td>
+          </tr>
+          <tr>
+            <td>Baies / fruits</td>
+            <td>Nourriture rapide, ingrédients spéciaux.</td>
+            <td>Snacks, desserts, recettes « buff » selon ton serveur.</td>
+          </tr>
+          <tr>
+            <td>Plantes spéciales</td>
+            <td>Rares et précieuses.</td>
+            <td>Potions, essences, recettes avancées.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Organisation de la ferme</h3>
+        <ul>
+          <li>Fais au moins un carré par culture de base (blé/maïs, légumes, baies).</li>
+          <li>Garde un chemin central pour circuler facilement entre les champs.</li>
+          <li>Place des coffres et un Farmer’s Workbench juste à côté de la zone agricole.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ANIMAUX -->
+    <section id="animaux">
+      <h2>Animaux & élevage</h2>
+      <p class="section-intro">
+        L’élevage fournit de la nourriture, des matériaux (laine, cuir, lait) et du fumier pour booster tes champs.
+      </p>
+
+      <h3>Animaux principaux</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Animal</th>
+            <th>Intérêt principal</th>
+            <th>Besoins de base</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Poulets</td>
+            <td>Œufs, viande.</td>
+            <td>Petit enclos, sacs de nourriture, graine/céréales.</td>
+          </tr>
+          <tr>
+            <td>Moutons</td>
+            <td>Laine, viande.</td>
+            <td>Enclos moyen, herbe ou céréales, sac de nourriture.</td>
+          </tr>
+          <tr>
+            <td>Cochons / vaches</td>
+            <td>Viande, cuir/lait selon le mob.</td>
+            <td>Enclos plus grand, bonne quantité de nourriture.</td>
+          </tr>
+          <tr>
+            <td>Animaux exotiques</td>
+            <td>Ressources rares, éventuels bonus/objets spéciaux.</td>
+            <td>Conditions spécifiques, souvent plus de place et/ou nourriture rare.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Comment lancer un élevage</h3>
+      <ol>
+        <li>Construis un enclos fermé (clôtures + portes) près de ta base.</li>
+        <li>Craft des sacs de nourriture via le Farmer’s Workbench et place‑les au sol dans l’enclos.</li>
+        <li>Attire ou capture quelques animaux avec de la nourriture ou des caisses de capture.</li>
+        <li>Éclaire l’enclos pour éviter les mobs hostiles et les fuites dans les trous.</li>
+      </ol>
+    </section>
+
+    <!-- ESSENCES ET CONSOMMABLES -->
+    <section id="essences">
+      <h2>Essences & consommables de farm</h2>
+      <p class="section-intro">
+        Certaines activités de farming génèrent des essences et consommables qui servent dans des crafts avancés.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ressource</th>
+            <th>Source</th>
+            <th>Utilité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essence of Life</td>
+            <td>Récompense de farming (cultures, animaux, évènements liés à la nature).</td>
+            <td>Craft d’outils de farm avancés, objets liés à la vie/nature, potions.</td>
+          </tr>
+          <tr>
+            <td>Sacs de nourriture</td>
+            <td>Craftés au Farmer’s Workbench.</td>
+            <td>Organisation de l’élevage, maintien des animaux dans les enclos.</td>
+          </tr>
+          <tr>
+            <td>Engrais / fertilisant</td>
+            <td>Fumier d’animaux, recettes d’alchimie ou de farm.</td>
+            <td>Accélérer la croissance des cultures, améliorer les rendements.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card tips">
+        <h3>Conseils de farm global</h3>
+        <ul>
+          <li>Place ta ferme et tes enclos juste à côté de ta base principale.</li>
+          <li>Diversifie cultures et animaux pour ne jamais manquer d’un type de ressource.</li>
+          <li>Stocke les essences dans un coffre dédié pour les crafts plus tard (magie, potions, objets spéciaux).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LIENS -->
+    <section id="liens">
+      <h2>Liens utiles</h2>
+      <ul>
+        <li><a href="nourriture_recettes.html">Voir Nourriture & recettes pour utiliser tes récoltes.</a></li>
+        <li><a href="objets_importants.html">Voir Objets importants pour les postes de travail liés au farming.</a></li>
+        <li><a href="systemes_avances.html">Voir Systèmes avancés pour les potions et essences spéciales.</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Mini‑wiki Hytale – page Farming & ressources. Ajuste les détails selon ton serveur ou tes règles.
+    </p>
+  </footer>
+</body>
+</html>
